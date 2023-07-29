@@ -46,4 +46,4 @@ class ViewSell(Resource):
 class ViewPong(Resource):
 
     def get(self):
-        return 'pong', 200
+        return {'message': 'Api Cafeteria works!'}, 200

@@ -2,9 +2,8 @@ import os
 from os import environ
 from flask import Flask
 
-# DATABASE_URL = os.getenv('DATABASE_URL', 'sqlite:///usuarios.db') if environ.get('DATABASE_URL') != 'default' else 'sqlite:///users.db'
-DATABASE_URL = 'postgresql://dbcafeteria.cozsivdeikvp.us-east-1.rds.amazonaws.com:5432/postgres?user=postgres&password=ypBM7yzA$T7EBNE7'
-# os.environ.get("DATABASE_URL")
+DATABASE_URL = os.getenv('DATABASE_URL', 'sqlite:///productos.db') if environ.get(
+    'DATABASE_URL') != 'default' else 'sqlite:///productos.db'
 
 
 def create_app(config_name):
