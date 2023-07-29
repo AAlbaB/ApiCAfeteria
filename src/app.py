@@ -13,9 +13,10 @@ db.create_all()
 
 api = Api(app)
 api.add_resource(views.ViewProducts, '/products')
+api.add_resource(views.ViewInventory, '/inventory')
+api.add_resource(views.ViewSell, '/sell')
 api.add_resource(views.ViewProduct, '/products/<int:id_producto>')
 api.add_resource(views.ViewPong, '/ping')
 
 
 jwt = JWTManager(app)
-
