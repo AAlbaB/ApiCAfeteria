@@ -1,5 +1,4 @@
-# Ejecución de la aplicación:
-## Ejecución local:
+## Ejecución local
 - Declarar la base de datos: DATABASE_URL = 'DATABASE_URL'
 - Ejecutar la aplicación: `python application.py`
 
